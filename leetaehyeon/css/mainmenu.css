@@ -1,0 +1,100 @@
+html {
+    scroll-behavior: smooth;
+}
+#container {
+    width: 1024;
+    background-image: linear-gradient(180deg, #62757f, #ffffff);
+    margin: -8px;
+}
+
+.menu {
+    background-color: rgb(101, 107, 128);
+    position: sticky;
+}
+.menu * {
+    display: inline;
+}
+.menu li {
+    margin: 40px;
+}
+.menu li a {
+    color: white;
+    text-decoration: none;
+}
+.menu ul {
+    padding-left: 0px;
+}
+.menu a:hover {
+    color: #95b0be;
+}
+.menu {
+    font-size: 20px;
+    font-style: italic;
+    align-items: center;
+    text-align: center;
+    padding-top: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 110px;
+}
+
+.video {
+    margin-left: 140px;
+}
+
+.about{
+    color: rgb(26, 37, 28);
+    text-decoration: none;
+    padding-left: 0px;
+    height: 1000px;
+}
+.about a:hover {
+    color: #212c31;
+}
+.about img{
+    margin-top: 260px;
+    margin-left: 250px; 
+    float: left; 
+    width: 600px; 
+    height: 600px; 
+    border-radius: 5%;
+}
+.about img:hover{
+    box-shadow: 5px 5px 15px 5px gray;
+}
+.about aside {
+    margin-top: 260px;
+    margin-left: 1100px;
+}
+.about aside p {
+    margin-top: 60px;
+    font-size: 23px;
+}
+
+.like {
+    color: rgb(26, 37, 28);
+    text-decoration: none;
+    padding-left: 0px;
+    height: 700px;
+    
+}
+.like img{
+    margin-left: 250px;
+    float: left;
+    width: 600px; 
+    height: 600px; 
+    border-radius: 5%;
+}
+.like img:hover{
+    box-shadow: 5px 5px 15px 5px gray;
+}
+.like aside {
+    margin-top: 100px;
+    margin-left: 1100px;
+}
+.like aside p{
+    margin-top: 60px;
+    font-size: 23px;
+}

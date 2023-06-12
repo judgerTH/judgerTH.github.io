@@ -1,0 +1,183 @@
+html {
+    scroll-behavior: smooth;
+}
+
+#container {
+    width: 1024;
+    background-image: linear-gradient(180deg, #62757f, #ffffff);
+    margin: -8px;
+}
+
+
+.menu {
+    background-color: rgb(101, 107, 128);
+    position: sticky;
+}
+
+.menu * {
+    display: inline;
+}
+
+.menu li {
+    margin: 60px;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu ul {
+    padding-left: 0px;
+}
+
+.menu a:hover {
+    color: #95b0be;
+}
+
+.menu {
+    font-size: 20px;
+    font-style: italic;
+    align-items: center;
+    text-align: center;
+    padding-top: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+}
+
+table {
+    border: 1px solid black;
+    margin: auto;
+    
+    /* display: none; */
+}
+tr, th, td {
+    border: 1px solid black;
+    margin: 10px;
+}
+#btn1 {
+    margin-left: 290px;
+}
+#btn1 {
+  font-size: 10em;
+  display: inline-block;
+  width: 50px;
+  box-sizing: content-box;
+  height: 50px;
+  border: 15px solid rgb(255, 255, 255);
+  position: relative;
+  border-radius: 50%;
+}
+#btn1:before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  right: -0.25em;
+  bottom: -0.1em;
+  border-width: 0;
+  background: rgb(255, 255, 255);
+  width: 0.35em;
+  height: 0.08em;
+  transform: rotate(45deg);
+}
+#btn1:hover {
+    background-color: rgb(101, 107, 128);
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+    background-color: #f5f6f7;
+    line-height: 1.5em;
+    color: #222;
+}
+
+a {
+    text-decoration: none;
+    color: #222;
+}
+
+/*member sign in*/
+.member {
+    width: 400px;
+    /* border: 1px solid #000; */
+    margin: auto;
+    /*중앙 정렬*/
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+
+.member .field {
+    margin: 7px 0;
+}
+
+.member b {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.member input:not(input[type=radio]),
+.member select {
+    border: 1px solid #dadada;
+    padding: 15px;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.member input[type=button],
+.member input[type=submit] {
+    background-color: rgb(101, 107, 128);
+    color: #fff
+}
+
+.member input:focus,
+.member select:focus {
+    border: 1px solid #2db400;
+}
+
+.field.birth div {
+    display: flex;
+    gap: 10px;
+}
+
+.field.tel-number div {
+    display: flex;
+}
+
+.field.tel-number div input:nth-child(1) {
+    flex: 2;
+}
+
+.field.tel-number div input:nth-child(2) {
+    flex: 1;
+}
+
+.field.gender div {
+    border: 1px solid #dadada;
+    padding: 15px 5px;
+    background-color: #fff;
+}
+
+.placehold-text {
+    display: block;
+    position: relative;
+}
+
+.placehold-text:before {
+    position: absolute;
+    right: 20px;
+    top: 13px;
+    pointer-events: none;
+}
+
+#submit:hover {
+    background-color: #6e828b;
+}
+@media (max-width:768px) {
+    .member {
+        width: 100%;
+    }
+}

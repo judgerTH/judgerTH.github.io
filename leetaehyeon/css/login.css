@@ -1,0 +1,123 @@
+html {
+    scroll-behavior: smooth;
+}
+
+#container {
+    width: 1024;
+    background-image: linear-gradient(180deg, #62757f, #ffffff);
+    margin: -8px;
+}
+
+
+.menu {
+    background-color: rgb(101, 107, 128);
+    position: sticky;
+}
+
+.menu * {
+    display: inline;
+}
+
+.menu li {
+    margin: 60px;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu ul {
+    padding-left: 0px;
+}
+
+.menu a:hover {
+    color: #95b0be;
+}
+
+.menu {
+    font-size: 20px;
+    font-style: italic;
+    align-items: center;
+    text-align: center;
+    padding-top: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+}
+
+
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+    background-color: #f5f6f7;
+    line-height: 1.5em;
+    color: #222;
+}
+
+a {
+    text-decoration: none;
+    color: #222;
+}
+
+.member {
+    width: 400px;
+    margin-top: 900px;
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+
+.member .logo {
+    display: block;
+    margin: 50px auto;
+}
+
+.member .field {
+    margin: 7px 0;
+}
+
+.member b {
+    display: block;
+    /*수직 정렬하기 */
+    margin-bottom: 5px;
+}
+
+.member input:not(input[type=radio]),
+.member select {
+    border: 1px solid #dadada;
+    padding: 15px;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.member input[type=button],
+.member input[type=submit] {
+    background-color: rgb(101, 107, 128);
+    color: #fff
+}
+
+.member input:focus,
+.member select:focus {
+    border: 1px solid #2db400;
+}
+
+.placehold-text {
+    display: block;
+    position: relative;
+}
+
+.placehold-text:before {
+    position: absolute;
+    right: 20px;
+    top: 13px;
+    pointer-events: none;
+}
+
+@media (max-width:768px) {
+    .member {
+        width: 100%;
+    }
+}

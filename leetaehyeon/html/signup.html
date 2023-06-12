@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/signup.css">
+
+</head>
+<style>
+    
+
+</style>
+
+<body>
+    <div id="container">
+        <style></style>
+        <header>
+            <nav class="menu">
+                <ul>
+                    <li class="mainMenu"><a href="../index.html" <b>Mainmenu</b></a></li>
+                    <li class="loginMenu"><a href="login.html" <b>Login</b></a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <br><br><br><br><br><br><br><br><br>
+
+
+        <form action="javascript:saveUser();" name="memberFrm">
+
+            <button id="btn1"></button>
+
+            <div class="member">
+                <div class="field">
+                    <b>아이디</b>
+                    <input type="text" id="userId" name="userId" placeholder="4 ~ 12자리">
+                </div>
+                <div class="field">
+                    <b>비밀번호</b>
+                    <input class="userpw" type="password" id="userPw" name="userPw" placeholder="특수문자(?!@#$)를 포함하는 8 ~ 12 자리">
+                </div>
+                <div class="field">
+                    <b>비밀번호 재확인</b>
+                    <input class="inputPwconfirm" type="password" id="inputPwconfirm" name="inputPwconfirm" placeholder="특수문자(?!@#$)를 포함하는 8 ~ 12 자리">
+                </div>
+                <div class="field">
+                    <b>이름</b>
+                    <input type="text" id="userName" name="userName" placeholder="한글 2글자 이상">
+                </div>
+
+                <div class="field birth">
+                    <b>생년월일</b>
+                    <div>
+                        <input type="number" placeholder="년(4자)" id="year" name="year">
+                        <input type="number" placeholder="월" id="month" name="month">
+                        <input type="number" placeholder="일" id="day" name="day">
+                    </div>
+                </div>
+
+                <div class="field tel-number">
+                    <b>휴대전화</b>
+                    <select>
+                        <option value="">대한민국 +82</option>
+                    </select>
+                    <div>
+                        <input type="tel" placeholder="전화번호 입력" id="phoneNum" name="phoneNum">
+                    </div>
+                </div>
+                <input type="submit" value="가입하기" id="submit">
+                
+            </div>
+        </form>
+
+        <br><br><br><br>
+
+        <table id="tbl-user">
+            <thead>
+              <tr>
+                <th>No</th>
+                <th>아이디</th>
+                <th>비밀번호</th>
+                <th>이름</th>
+                <th>생일(년)(</th>
+                <th>생일(월)</th>
+                <th>생일(일)</th>
+                <th>전화번호</th>
+                <th>가입일시</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+
+        <script src="../javascript/signup.js">
+
+        </script>
+
+</body>
+
+</html>
